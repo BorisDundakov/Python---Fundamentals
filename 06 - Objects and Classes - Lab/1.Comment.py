@@ -1,0 +1,17 @@
+class Comment:
+    def __init__(self, username, content, likes = 0):
+        self.username = username
+        self.content = content
+        self.likes = likes
+
+
+
+comment = Comment ("user1", "I like this book", 16)
+print(comment.username)
+print(comment.content)
+comment.likes += 1
+print(comment.likes)
+
+
+final = Comment (likes = 1, content = "No", username = "Pesho")
+print(final.content)
